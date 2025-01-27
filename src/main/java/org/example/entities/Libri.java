@@ -38,4 +38,9 @@ public class Libri extends ElementoCatalogo {
     public void setGenere(String genere) {
         this.genere = genere;
     }
+
+    @Override
+    public String toString(){
+        return super.toString() + " " + "Autore: " + autore + " " + "Genere: " + genere;
+    }
 }

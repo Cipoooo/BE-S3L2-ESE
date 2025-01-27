@@ -9,6 +9,7 @@ import javax.persistence.*;
 public abstract class ElementoCatalogo {
 
     @Id
+    @GeneratedValue
     private String isbn;
     @Column(name = "titolo", nullable = false)
     private String titolo;
@@ -58,4 +59,10 @@ public abstract class ElementoCatalogo {
     public void setNumeroPagine(int numeroPagine) {
         this.numeroPagine = numeroPagine;
     }
+
+    @Override
+    public String toString(){
+        return "Codice ISBN: " + isbn + " " + "Ttitolo: " + titolo + " " + "Anno pubblicazioe: " + annoPubblicazione + " " + "Numero pagine: " + numeroPagine;
+    }
+
 }
