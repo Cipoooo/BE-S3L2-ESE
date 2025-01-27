@@ -9,7 +9,6 @@ import javax.persistence.*;
 public abstract class ElementoCatalogo {
 
     @Id
-    @GeneratedValue
     private String isbn;
     @Column(name = "titolo", nullable = false)
     private String titolo;

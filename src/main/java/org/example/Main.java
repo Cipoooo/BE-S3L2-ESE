@@ -37,23 +37,23 @@ public class Main {
         Utente u4 = new Utente("Bruna","Brunelli",LocalDate.of(1969,2,28),"279273");
         Utente u5 = new Utente("Letizia","Letizietti",LocalDate.of(1934,3,27),"927341");
 
-        archivio.aggiungiElemento(l1);
-        archivio.aggiungiElemento(l2);
-        archivio.aggiungiElemento(l3);
-        archivio.aggiungiElemento(l4);
-        archivio.aggiungiElemento(l5);
+        Archivio.aggiungiElemento(l1);
+        Archivio.aggiungiElemento(l2);
+        Archivio.aggiungiElemento(l3);
+        Archivio.aggiungiElemento(l4);
+        Archivio.aggiungiElemento(l5);
 
-        archivio.aggiungiElemento(r1);
-        archivio.aggiungiElemento(r2);
-        archivio.aggiungiElemento(r3);
-        archivio.aggiungiElemento(r4);
-        archivio.aggiungiElemento(r5);
+        Archivio.aggiungiElemento(r1);
+        Archivio.aggiungiElemento(r2);
+        Archivio.aggiungiElemento(r3);
+        Archivio.aggiungiElemento(r4);
+        Archivio.aggiungiElemento(r5);
 
-        archivio.aggiungiUtente(u1);
-        archivio.aggiungiUtente(u2);
-        archivio.aggiungiUtente(u3);
-        archivio.aggiungiUtente(u4);
-        archivio.aggiungiUtente(u5);
+        Archivio.aggiungiUtente(u1);
+        Archivio.aggiungiUtente(u2);
+        Archivio.aggiungiUtente(u3);
+        Archivio.aggiungiUtente(u4);
+        Archivio.aggiungiUtente(u5);
 
         List<ElementoCatalogo> listaP1 = new ArrayList<>();
         listaP1.add(l1);
@@ -82,11 +82,11 @@ public class Main {
         Prestiti p4 = new Prestiti(u4,listaP4,LocalDate.of(2022,4,3),LocalDate.of(2022,5,13),LocalDate.of(2023,1,3));
         Prestiti p5 = new Prestiti(u5,listaP5,LocalDate.of(2025,1,1),LocalDate.of(2025,3,24),LocalDate.of(2025,1,26));
 
-        archivio.aggiungiPrestito(p1);
-        archivio.aggiungiPrestito(p2);
-        archivio.aggiungiPrestito(p3);
-        archivio.aggiungiPrestito(p4);
-        archivio.aggiungiPrestito(p5);
+        Archivio.aggiungiPrestito(p1);
+        Archivio.aggiungiPrestito(p2);
+        Archivio.aggiungiPrestito(p3);
+        Archivio.aggiungiPrestito(p4);
+        Archivio.aggiungiPrestito(p5);
 
         //TEST METODI
 
